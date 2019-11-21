@@ -26,3 +26,12 @@ This also explains the concepts of Jump Servers.
 
 - An alternative to modifying the path is to move the Terraform executable to a directory that is normally included in the path by default, 
   for example: sudo mv terraform /user/local/bin
+  
+- Alternatively you can follow the following steps to install terraform on Linux Machine.
+  - sudo apt-get update
+  - sudo apt-get install wget unzip -y
+  - cd /tmp && sudo wget "https://releases.hashicorp.com/terraform/0.12.13/terraform_0.12.13_linux_amd64.zip"
+  - sudo unzip terraform_0.12.13_linux_amd64.zip
+  - sudo mv terraform /usr/local/bin
+  - terraform version
+  - sudo rm -rf /tmp/terraform_0.12.13_linux_amd64.zip 
